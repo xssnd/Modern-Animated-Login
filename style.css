@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,11 +29,11 @@ body {
 }
 
 .login-section {
-    position:absolute;
+    position: absolute;
     left: 50%;
     bottom: -88%;
-    transform: translate(-50%);
-    width: calc(100%+100%);
+    transform: translateX(-50%);
+    width: calc(100% + 180px);
     padding: 20px 140px;
     background: #fff;
     border-radius: 290px;
@@ -50,10 +50,14 @@ body {
     cursor: pointer;
 }
 
+.login-section header{
+    color: #333;
+    opacity: 0.6;
+}
 .social-buttons {
     margin-top: 40px;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     gap: 15px;
 }
 
@@ -71,12 +75,12 @@ body {
     cursor: pointer;
 }
 
-.login-section .social-button button {
+.login-section .social-buttons button {
     border: 1px solid #000;
 }
 
-.login-section .social-button button i,
-.signup-section .social-button button i {
+.login-section .social-buttons button i,
+.signup-section .social-buttons button i {
     font-size: 25px;
 }
 
@@ -108,14 +112,14 @@ body {
     margin-top: 20px;
 }
 
-.form-input {
+form input{
     outline: none;
     border: none;
     padding: 10px 15px;
     font-size: 16px;
     color: #333;
     font-weight: 400;
-    border-radius: 9px;
+    border-radius: 8px;
     background: #fff;
 }
 
@@ -131,7 +135,7 @@ form a {
     color : #fff;
 }
 
-form .btn {
+form .btn{
     margin-top: 15px;
     border: none;
     padding: 10px 15px;
@@ -141,22 +145,22 @@ form .btn {
     cursor: pointer;
 }
 
-.login-section .btn {
-    background : #303f9f;
+.login-section .btn{
+    background: #303f9f;
     color: #fff;
     border: none;
 }
 
-.container.active .login-section {
-    botttom: -12%;
+.container.active .login-section{
+    bottom: -12%;
     border-radius: 220px;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.container.active .login-section header {
+.container.active .login-section header{
     opacity: 1;
 }
 
-.container.active .signup-section header {
+.container.active .signup-section header{
     opacity: 0.6;
 }
